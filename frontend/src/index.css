@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+.fc .fc-col-header-cell {
+  background-color: #fef2f2;
+  color: #db2777;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 8px 0;
+  border: none;
+}
+
+.fc .fc-col-header-cell.selected-day {
+  background-color: #f9a8d4 !important;
+  color: white !important;
+  border-radius: 9999px;
+  padding: 6px;
+}
+
+/* Monthly view event remove default blue */
+/* Remove default event styling (tiny chips) */
+.fc-daygrid-event {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Let event cover the whole day cell */
+.fc-daygrid-day-frame {
+  position: relative;
+}
+
+.fc-daygrid-event-harness {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Customize header title (Month Year) */
+.fc-toolbar-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000; /* dark pink */
+}
+
+/* Customize nav arrows */
+.fc-button {
+  background: #fbcfe8 !important;
+  color: #000000 !important;
+  border: none !important;
+  border-radius: 6px !important;
+  padding: 4px 8px !important;
+  font-size: 12px !important;
+}
