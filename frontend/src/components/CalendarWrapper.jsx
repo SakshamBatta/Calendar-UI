@@ -14,13 +14,11 @@ const CalendarWrapper = () => {
 
   return (
     <div className="p-4 max-w-sm mx-auto bg-white min-h-screen">
-      {/* Header */}
       <div className="flex justify-between items-center mb-4">
         <h1 className="text-2xl font-bold">Calendar</h1>
         <button className="text-pink-500 font-semibold">+ New event</button>
       </div>
 
-      {/* Tabs */}
       <div className="flex justify-between bg-gray-100 rounded-full p-1 mb-4">
         {["Daily", "Weekly", "Monthly"].map((tab) => (
           <button
@@ -37,7 +35,6 @@ const CalendarWrapper = () => {
         ))}
       </div>
 
-      {/* Render respective view */}
       {renderView()}
     </div>
   );

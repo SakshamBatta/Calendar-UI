@@ -28,14 +28,13 @@ const DailyView = () => {
       id: 2,
       time: "10:00 PM - 5:00 AM",
       title: "Project Deadline - Charlie",
-      icon: <FaBasketballBall className="text-xl" />, // Fixed icon here
+      icon: <FaBasketballBall className="text-xl" />,
       user: "Brine",
     },
   ];
 
   return (
     <div>
-      {/* Date Row */}
       <div className="flex justify-between text-center mb-4">
         {dates.map((day, idx) => (
           <div
@@ -65,7 +64,6 @@ const DailyView = () => {
         ))}
       </div>
 
-      {/* Event Cards */}
       <div className="space-y-4">
         {dummyEvents.map((event) => (
           <div

@@ -39,7 +39,7 @@ const MonthlyView = () => {
         start: "title",
         end: "prev,next",
       }}
-      titleFormat={{ year: "numeric", month: "long" }} // "June 2025"
+      titleFormat={{ year: "numeric", month: "long" }}
       events={events}
       eventContent={renderEventContent}
     />

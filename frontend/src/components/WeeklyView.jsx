@@ -48,7 +48,7 @@ const WeeklyView = () => {
     setSelectedDate(info.dateStr);
   };
 
-  const handleDatesSet = (data) => {
+  const handleDatesSet = () => {
     setTimeout(() => {
       const headerEls = document.querySelectorAll(".fc-col-header-cell");
       headerEls.forEach((el) => {
